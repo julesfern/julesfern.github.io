@@ -7,8 +7,8 @@ import {loadJson} from '../util/json-loader.js';
  * 
  */
 
-const VIDEOS_URL = '/asset/data/videos.json';
-const LISTS_URL = '/asset/data/lists.json';
+const VIDEOS_URL = '/netflix/asset/data/videos.json';
+const LISTS_URL = '/netflix/asset/data/lists.json';
 
 export default class Catalog {
 
