@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test harness - native ES6</title>
+    <link href="http://unpkg.com/mocha@5.2.0/mocha.css" rel="stylesheet" />
+    <style type="text/css">
+      #testbench {
+        position: fixed;
+        bottom: 80px;
+        right: 100px;
+        border: 1px solid red;
+        width: 40%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <!-- Load and initialize Mocha and libraries -->
+    <script src="http://unpkg.com/sinon@6.0.0/pkg/sinon.js"></script>
+    <script src="http://unpkg.com/should@13.2.1/should.js"></script>
+    <script src="http://unpkg.com/mocha@5.2.0/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+
+    <!-- Load test suites -->
+    <!-- FIXME - serve dynamically via dev server + autoindex files -->
+    <script type="module" src="util/message-bus.test.js"></script>
+    <script type="module" src="navigation/navigation-controller.test.js"></script>
+    <script type="module" src="component/base.test.js"></script>
+    <script type="module" src="component/virtual-list.test.js"></script>
+
+    <!-- Exec the test suites once all modules are loaded -->
+    <script type="module">
+      mocha.checkLeaks();
+      mocha.run();
+    </script>
+  </body>
+</html>

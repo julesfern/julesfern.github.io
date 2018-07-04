@@ -1,0 +1,15 @@
+{
+  "name": "netflix-uie-test-jglegg",
+  "version": "1.0.0",
+  "description": "Submission for Netflix UI Engineer takehome test",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/http-server .",
+    "test": "echo \"See README.md\""
+  },
+  "author": "Jules Glegg <jules@julesfern.net>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
