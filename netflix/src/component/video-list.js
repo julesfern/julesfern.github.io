@@ -52,7 +52,7 @@ class VideoListItem extends Component {
     this._element.setAttribute('data-index', index);
     // Update heading
     const img = this._element.querySelector('img');
-    img.setAttribute('src', `/asset/image/boxart/${data.videoId}.jpg`)
+    img.setAttribute('src', `/netflix/asset/image/boxart/${data.videoId}.jpg`)
   }
 }
 

@@ -29,7 +29,7 @@ export default class BackgroundSwitcher extends Component {
       selectionImg.removeEventListener('transitionend', cleanupOldNodes);
     };
     selectionImg.setAttribute('data-video-id', selectedVideo.videoId);
-    selectionImg.setAttribute('src', `/asset/image/displayart/${selectedVideo.videoId}.jpg`);
+    selectionImg.setAttribute('src', `/netflix/asset/image/displayart/${selectedVideo.videoId}.jpg`);
     selectionImg.addEventListener('transitionend', cleanupOldNodes);
     root.insertBefore(selectionImg, root.firstChild);
   }
